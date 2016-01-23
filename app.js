@@ -1,6 +1,9 @@
 angular
     .module('app', [
-    'ui.router'])
+    'ui.router',
+    'ui.bootstrap',
+    'cgPrompt',
+    'ngTable'])
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider
         /*   .state('clients', {

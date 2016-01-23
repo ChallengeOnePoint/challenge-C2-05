@@ -3,3 +3,10 @@
     height:100%;
     width:100%;
 }
+
+.button{
+    color:red;
+    width: 20px;
+    height: 20px;
+    float: right;
+}

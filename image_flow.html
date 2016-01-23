@@ -1,8 +1,11 @@
 <div>
-    <div class="panel panel-default flow col-md-3" ng-repeat="image in images track by $index">
-        <div class="panel-heading" ><a class="button" ng-click='remove($index)'>X</a>{{image.name}}</div>
-        <div class="panel-body">
-            <img src="{{image.picture}}" title="{{image.name + ', ' + image.gender + ', ' + image.age}}">
+    <div class="col col-md-3" ng-repeat="image in images track by $index">
+        <div class="panel panel-default">
+            <div class="panel-heading">{{image.name}} - {{image.gender}} - {{image.age}}</div>
+            <div class="panel-body">
+                <img src="{{image.picture}}" title="{{image.name + ', ' + image.gender + ', ' + image.age}}">
+                <button class="btn btn-danger" ng-click="remove($index)">Kill Kitten</button>
+            </div>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 <div>
     <div class="panel panel-default" ng-repeat="image in images track by $index">
-        <div class="panel-heading" >{{image.name}}</div>
-        <div class="panel-body" ng-click='remove($index)'>
+        <div class="panel-heading" >{{image.name}} </div>
+        <div class="panel-body " ng-click='remove($index)'>
             <img src="{{image.picture}}" title="{{image.name + ', ' + image.gender + ', ' + image.age}}">
         </div>
     </div>

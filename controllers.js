@@ -7,4 +7,9 @@ angular.module('app').controller('ListController', function ($scope, $state) {
             $scope.$apply;
         }
     })
+    
+    $scope.remove = function (index) {
+        $scope.images.splice(index, 1);
+        //$scope.$apply;
+    }
 })
